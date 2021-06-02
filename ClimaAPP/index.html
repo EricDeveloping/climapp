@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temperatura</title>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="tittle">Temperatura</h1>
+        <p>Escribe la ciudad que gustes saber su temperatura actual.</p>
+        <form id="form">
+            <input type="text" id="input" class="input" placeholder="Ingresa el nombre de la ciudad" autocomplete="off">
+        </form>  
+    </header>
+
+    <div id="container" class="container"> 
+        <section class="box">
+            <div class="temperature-box">
+                <p class="temperature"><span id="temperature">--</span>°C</p>
+            </div>
+            <div class="details-box">
+                <p class="font-details">Sensación Termica: <span class="font-details" id="thermal_sensation">--</span>°C</p>
+                <p class="font-details">Humedad: <span class="font-details" id="humidity">--</span>%</p>
+                <p class="font-details">Presión: <span class="font-details" id="pressure">--</span>hPa</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer font-details">
+        <p>Desarrollado por: <span>Eric</span> Rosales Díaz.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
